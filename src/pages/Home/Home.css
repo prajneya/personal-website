@@ -6,6 +6,11 @@ html, body{
 	overflow-x: hidden;
 	background-color: #2C3E50;
 	background-image: linear-gradient(315deg, #2C3E50 0%, #000000 74%);
+	color: #C5C6C7;
+}
+
+hr{
+	border-color: #c5c6c7;
 }
 
 .color-special{
@@ -31,18 +36,52 @@ html, body{
 	margin-left: 4rem;
 }
 
+.topic-content{
+	width: 63vw;
+	margin-top: 6rem;
+	margin-left: 4rem;
+}
+
+.cta-button{
+	position: fixed;;
+	right: 10px;
+	top: 10px;
+	border-radius: 10px;
+	border-style: none;
+	z-index: 3
+}
+
+.cta-button:hover{
+	color: black;
+	background-color: white;
+	cursor: pointer;
+}
+
 @media only screen and (max-width: 992px) {
   .main-content{
-  	min-width: 100vw;
+  	min-width: 90vw;
   	margin-top: 8rem;
+  }
+  .topic-content{
+  	min-width: 80vw;
+  	margin-right: 4rem;
   }
 }
 
 @media only screen and (max-width: 576px) {
+  .cta-button{
+  	display: none;
+  }
   .main-content{
   	width: 100%;
   	text-align: center;
   	margin-top: 6rem;
+  	margin-left: 0;
+  }
+  .topic-content{
+  	width: 100%;
+  	text-align: center;
+  	margin-top: 3rem;
   	margin-left: 0;
   }
 }

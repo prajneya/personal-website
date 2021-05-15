@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 import './Sidebar.css';
 
 class Sidebar extends Component {
-	render() {
+	render(props) {
 
 		return (
 			<>
@@ -11,21 +12,51 @@ class Sidebar extends Component {
 					<div className="my-5 sidebar-item color-special">
 						BLOG
 					</div>
+					{this.props.name === "work" ? 
+					<div className="my-5 sidebar-item color-active">
+						WORK & EXPERIENCE
+					</div>  :
+					<Link to="/work">
 					<div className="my-5 sidebar-item color-inactive">
 						WORK & EXPERIENCE
-					</div>
+					</div> 
+					</Link> }
+					{this.props.name === "study" ? 
+					<div className="my-5 sidebar-item color-active">
+						RESEARCH & STUDY
+					</div> :
+					<Link to="/study">
 					<div className="my-5 sidebar-item color-inactive">
 						RESEARCH & STUDY
-					</div>
+					</div> 
+					</Link> }
+					{this.props.name === "projects" ? 
+					<div className="my-5 sidebar-item color-active">
+						COOL PROJECTS
+					</div> :
+					<Link to="/projects">
 					<div className="my-5 sidebar-item color-inactive">
 						COOL PROJECTS
-					</div>
+					</div> 
+					</Link> }
+					{this.props.name === "contact" ? 
+					<div className="my-5 sidebar-item color-active">
+						REACH OUT
+					</div> :
+					<Link to="/contact">
 					<div className="my-5 sidebar-item color-inactive">
 						REACH OUT
 					</div>
+					</Link> }
+					{this.props.name === "skills" ? 
+					<div className="my-5 sidebar-item color-active">
+						SKILLS
+					</div> :
+					<Link to="/skills">
 					<div className="my-5 sidebar-item color-inactive">
 						SKILLS
 					</div>
+					</Link> }
 				</div>
 			</>
 

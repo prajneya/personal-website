@@ -1,0 +1,27 @@
+.frosted-glass-card{
+	background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(5px);
+ 	width: 100%;
+ 	height: 15rem;
+ 	border-radius: 20px;
+}
+
+.card-header{
+	font-size: 2rem;
+}
+
+.learn-more{
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
+}
+
+@media only screen and (max-width: 576px) {
+	.frosted-glass-card{
+		text-align: left;
+		height: 22rem;
+	}
+	.card-detail{
+		margin-left: 1.5rem !important;
+	}
+}

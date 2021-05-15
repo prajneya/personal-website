@@ -2,13 +2,23 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Home from './components/Home/Home';
+import Home from './pages/Home/Home';
+import Work from './pages/Work/Work';
+import Study from './pages/Study/Study';
+import Projects from './pages/Projects/Projects';
+import Contact from './pages/Contact/Contact';
+import Skills from './pages/Skills/Skills';
 
 function App() {
   return (
     <BrowserRouter>
         <Switch>
           <Route path="/" component={Home} exact />
+          <Route path="/work" component={Work} exact />
+          <Route path="/study" component={Study} exact />
+          <Route path="/projects" component={Projects} exact />
+          <Route path="/contact" component={Contact} exact />
+          <Route path="/skills" component={Skills} exact />
         </Switch>
     </BrowserRouter>
   );
