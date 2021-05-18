@@ -10,6 +10,7 @@ import Study from './pages/Study/Study';
 import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
 import Skills from './pages/Skills/Skills';
+import Blog from './pages/Blog/Blog';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/projects" component={Projects} exact />
           <Route path="/contact" component={Contact} exact />
           <Route path="/skills" component={Skills} exact />
+          <Route path="/blog" component={Blog} exact />
         </Switch>
     </BrowserRouter>
   );

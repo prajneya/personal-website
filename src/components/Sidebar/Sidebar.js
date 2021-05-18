@@ -9,10 +9,16 @@ class Sidebar extends Component {
 		return (
 			<>
 				<div className="no-scroll sidebar">
+					{this.props.name === "blog" ? 
+					<div className="my-5 sidebar-item color-active">
+						BLOG
+					</div> :
+					<Link to="/blog">
 					<div className="my-5 sidebar-item color-special">
 						BLOG
 					</div>
-					{this.props.name === "work" ? 
+					</Link> }
+					{/*{this.props.name === "work" ? 
 					<div className="my-5 sidebar-item color-active">
 						WORK & EXPERIENCE
 					</div>  :
@@ -20,7 +26,7 @@ class Sidebar extends Component {
 					<div className="my-5 sidebar-item color-inactive">
 						WORK & EXPERIENCE
 					</div> 
-					</Link> }
+					</Link> }*/}
 					{this.props.name === "study" ? 
 					<div className="my-5 sidebar-item color-active">
 						RESEARCH & STUDY
