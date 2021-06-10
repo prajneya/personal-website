@@ -16,7 +16,7 @@ class About extends Component {
 						<br/><br/>
 						I currently work at the <span className="color-highlight">Cognitive Science Lab</span> studying varying brain patterns in humans according to the languages they speak. 
 						<br/><br/>
-						I love designing and developing beautiful websites(as this one, :P). I am amazing at singing and can play the guitar and the piano. I love travelling and playing video games. Check out my <span className="color-highlight">blog</span> and <span className="color-highlight">project</span> sections for cool stuff.
+						I love designing and developing beautiful websites(as this one, :P). I am amazing at singing and can play the guitar and the piano. I love travelling and playing video games. Check out my <a href="/blog"><span className="color-highlight">blog</span></a> and <a href="/projects"><span className="color-highlight">project</span></a> sections for cool stuff.
 					</div>
 				</div>
 			</>

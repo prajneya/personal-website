@@ -11,7 +11,7 @@ class Home extends Component {
 
 		return (
 			<>
-				<Link to="/"><button className="cta-button btn-dark px-3 py-2">Login</button></Link>
+				{/*<Link to="/"><button className="cta-button btn-dark px-3 py-2">Login</button></Link>*/}
 				<div className="row">
 					<div className="col-lg-8">
 						<About />

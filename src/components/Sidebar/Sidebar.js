@@ -56,11 +56,11 @@ class Sidebar extends Component {
 					</Link> }
 					{this.props.name === "skills" ? 
 					<div className="my-5 sidebar-item color-active">
-						SKILLS
+						SKILLS & INTERESTS
 					</div> :
 					<Link to="/skills">
 					<div className="my-5 sidebar-item color-inactive">
-						SKILLS
+						SKILLS & INTERESTS
 					</div>
 					</Link> }
 				</div>

@@ -9,12 +9,12 @@ class BlogList extends Component {
 					<div className="subtopic-heading">scribbles, here and there.</div>
 					<hr />
 					<div className="my-5 px-3">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus erat massa, imperdiet sed fermentum ac, consectetur consequat quam.
+						I write about random, but super duper interesting things. It's high time that I put it out there now in an organized manner. Will be updating this section soon.
 						<br/><br/>
 
-						You can also have a look at the <span className="color-highlight">projects</span> I’m working on.
+						Till then, you can also have a look at the <a href="/projects"><span className="color-highlight">projects</span></a> I’m working on.
 					</div>
-					<div className="row">
+					{/*<div className="row">
 						<div className="col-lg-6">
 							<div className="mx-2">
 								<div className="my-2 frosted-glass-card">
@@ -43,7 +43,7 @@ class BlogList extends Component {
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>*/}
 					
 				</div>
 			</>
